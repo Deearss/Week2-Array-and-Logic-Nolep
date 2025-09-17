@@ -19,12 +19,10 @@ function angkaPalindrome(num) {
   // you can only write your code here!
   let result = ``;
   
-  let ketemu = false;
 
-  for (let i = num + 1; ketemu !== true; i++) {
+  for (let i = num + 1; ; i++) {
     if (`${i}` === balikkanKata(`${i}`)) {
         result = i;
-        ketemu = true;
         break;
     }
   }
